@@ -49,4 +49,6 @@ O jogo utiliza a linguagem de programação C e implementa as seguintes estrutur
 As mecânicas do jogo permitem o crescimento do personagem e decisões que impactam a história, criando uma experiência imersiva para o jogador.
 
 
+Link do repositório:https://github.com/caroltorchia/Proj-game-C
+
 
