@@ -2,53 +2,57 @@
 Grupo: **Ana Carolina Torchia**
 Projeto de gameficação na linguagem C para PIF
 
+## Sumário
+
 2. Nome da disciplina: Programação Imperativa e Funcional - 2024.2.
 
 3. Nome da instituição de ensino: CESAR School.
 
-4. Nome do jogo desenvolvido (Joguete).
+4. Nome do jogo desenvolvido (Enforcados - Jogo da forca).
 
 5. Instruções detalhadas para compilar e executar o jogo.
 
 6. Breve descrição do jogo, incluindo as regras e como interagir com ele.
+
+## Enforcados - A forca Suprema
+
+Enforcados - A forca Suprema é um jogo da forca (Hangman) que incorpora elementos de adivinhação e progressão de dificuldade. O jogador deve adivinhar letras de uma palavra secreta antes de esgotar suas tentativas.
 7. Aqui está uma descrição em português das mecânicas de jogo:
 
 ### Descrição das Mecânicas de Jogo
 
-O jogo é um RPG baseado em texto que incorpora elementos de combate e progressão de personagem. O jogador assume o papel de Dio, buscando derrotar diversos inimigos e chefes para chegar à confrontação final. As mecânicas principais incluem:
+As mecânicas principais incluem:
 
-1. Estatísticas do personagem: O jogador possui atributos como Vida, Ataque, Defesa, Nível, XP e XP necessário para o próximo nível.
+1. Palavras a serem adivinhadas: O jogador tenta descobrir uma palavra secreta letra por letra.
 
-2. Sistema de combate: As batalhas ocorrem em rodadas alternadas entre o jogador e os inimigos, com cálculo de dano baseado nas habilidades de ataque e defesa.
+2. Tentativas limitadas: O jogador tem um número limitado de tentativas para adivinhar a palavra.
 
-3. Progressão de nível: Quando o jogador ganha XP suficiente, pode aumentar de nível, elevando suas estatísticas.
+3. Feedback visual: A cada tentativa, o jogador recebe feedback sobre as letras adivinhadas corretamente e as que não estão na palavra.
 
-4. Avanço narrativo: O jogo progride através de uma história envolvendo encontros com vários personagens e locais.
+4. Avanço de dificuldade: O jogo pode incluir diferentes níveis de dificuldade com palavras de diferentes comprimentos.
 
-5. Opções de escolha: Em certos pontos, o jogador é solicitado a tomar decisões que influenciam o avanço da história.
+5. Opções de escolha: O jogador pode escolher categorias de palavras que influenciam a experiência de jogo.
 
 ### Implementação
 
 O jogo utiliza a linguagem de programação C e implementa as seguintes estruturas e funções:
 
-1. Estrutura `Personagem`: Representa personagens com atributos como nome, Vida, Ataque, Defesa, Nível e XP.
+1. Estrutura `Game`: Representa o estado do jogo com atributos como palavra a ser adivinhada, exibição da palavra, tentativas permitidas, pontuação do jogador, limite de tempo e nível de dificuldade.
 
-2. Funções para operações de personagem:
-   - `exibirEstado`: Exibe o status do personagem
-   - `atacar`: Calcula e aplica dano durante o combate
-   - `subirNivel`: Gerencia o aumento de nível e o aumento das estatísticas
-   - `batalha`: Gestiona o combate em rodadas entre personagens
+### Build do projeto
 
-3. Funções principais do jogo:
-   - `continuarHistoria2`: Avança na história após derrotar um chefe
-   - `continuarHistoria3`: Apresenta o desafio final e o cenário de encerramento
+Para compilar o projeto, utilize o seguinte comando no terminal:
+```bash
+$ make
+```
+Este comando irá compilar todos os arquivos necessários e gerar os executáveis no diretório apropriado.
 
-4. Interação do usuário:
-   - O jogo solicita escolhas ao jogador em certos pontos, permitindo que ele influencie o avanço da narrativa.
+### Executar o jogo
 
-As mecânicas do jogo permitem o crescimento do personagem e decisões que impactam a história, criando uma experiência imersiva para o jogador.
-
+Após a compilação bem-sucedida, você pode iniciar o jogo com o seguinte comando:
+```bash
+$ ./bin/enforcados
+```
+Certifique-se de que o diretório `bin` contém o executável `enforcados`. Se houver algum erro durante a execução, verifique se a compilação foi realizada corretamente.
 
 Link do repositório:https://github.com/caroltorchia/Proj-game-C
-
-

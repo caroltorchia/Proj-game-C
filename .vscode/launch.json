@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/acts_cesar/proj-game-C/cli-lib-main/cli-lib-main",
-      "program": "c:/Users/acts_cesar/proj-game-C/cli-lib-main/cli-lib-main/build/Debug/outDebug",
+      "cwd": "${workspaceFolder}/",
+      "program": "/${workspaceFolder}/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
